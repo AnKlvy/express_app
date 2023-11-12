@@ -66,6 +66,6 @@ module.exports = app;
 // }
 
 app.listen(8080, () => {
-  //   console.log("Server is running on port 5039");
+    console.log("http://localhost:8080");
     // connectToMongoDB();
   });
