@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexapp = require('./routes/index');
 var usersapp = require('./routes/users');
+var booksapp = require('./models/book');
 
 // const { MongoClient } = require("mongodb");
 // const cors = require("cors");
@@ -30,6 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexapp);
 app.use('/users', usersapp);
+app.use('/books', booksapp);
 
 // app.use(cors());
 // app.use(Express.json()); //для разбора JSON-тела запросов
