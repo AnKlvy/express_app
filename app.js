@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 var indexapp = require('./routes/index');
 var usersapp = require('./routes/users');
-var booksapp = require('./models/book');
+var booksapp = require('./controllers/bookController');
 
 // const { MongoClient } = require("mongodb");
 // const cors = require("cors");
